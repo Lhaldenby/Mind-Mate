@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.notts.MindMate"
+    android:versionCode="2"
+    android:versionName="1.1">
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/brain_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/brain_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.notts.MindMate.DetailedCalendarDay" />
+        <activity android:name="com.notts.MindMate.EditAppsActivity" />
+        <activity android:name="com.notts.MindMate.SubmissionActivity" />
+        <activity android:name="com.notts.MindMate.SettingActivity" />
+        <activity android:name="com.notts.MindMate.HelpActivity" />
+        <activity android:name="com.notts.MindMate.CalendarActivity" />
+        <activity android:name="com.notts.MindMate.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.notts.MindMate.NotificationReceiver"
+            android:exported="false" />
+        <receiver
+            android:name="com.notts.MindMate.EndofDayReceiver"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

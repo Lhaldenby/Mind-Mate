@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mind Mate</string>
+    <string name="channel_name">User Wellbeing</string>
+    <string name="channel_description">Tracks the user wellbeing notification</string>
+    <string name="reply_label">Feeling</string>
+    <string name="Notification_Hour"></string>
+    <string name="Notification_Minute"></string>
+</resources>

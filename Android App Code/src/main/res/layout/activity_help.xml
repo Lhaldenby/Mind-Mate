@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <ImageButton
+            android:id="@+id/MainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="startMain"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/CalendarButton"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar"
+            tools:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+        <ImageButton
+            android:id="@+id/CalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="startCalendar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/HelpButton"
+            app:layout_constraintStart_toEndOf="@+id/MainButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_today"
+            tools:srcCompat="@android:drawable/ic_menu_today" />
+
+        <ImageButton
+            android:id="@+id/HelpButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/SettingButton"
+            app:layout_constraintStart_toEndOf="@+id/CalendarButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+        <ImageButton
+            android:id="@+id/SettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:onClick="startSetting"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/HelpButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@android:drawable/ic_menu_info_details" />
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="184dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:text="Support Network"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="353dp"
+            android:layout_height="236dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="51dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="7dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/MainButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            app:layout_constraintVertical_bias="0.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/app1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="notOK"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="What's Up"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mood Kit"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Twenty-Four Hours a Day"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quit That!"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mind Shift"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CBT Thought Record Diary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="IMoodJournal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="eMoods"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Talkspace Online Therapy"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Happify"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="MoodTools"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recovery Record"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rise Up and Recover"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lifesum"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="nOCD"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Worry Watch"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GG OCD"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PTSD Coach"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/app20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Breathe2Relax"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/apptitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="5dp"
+            android:text="Mental Health Apps"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Title"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="1dp"
+            android:text="Mental Health Websites"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="355dp"
+            android:layout_height="262dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="64dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/web1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.nhs.uk"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.xenzone.com"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.thinktwiceinfo.org"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.mind.org.uk"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:password="false"
+                    android:text="www.youndminds.org.uk"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.mentalhealth.org.uk"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.rethink.org"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/web8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoLink="web"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="www.hftd.org"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
